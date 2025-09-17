@@ -1,14 +1,27 @@
 {
-  "name": "vending-machine-app",
+  "name": "anjali-vending-app",
   "version": "1.0.0",
+  "description": "��#\u0000 \u0000s\u0000m\u0000a\u0000r\u0000t\u0000-\u0000v\u0000e\u0000n\u0000d\u0000i\u0000n\u0000g\u0000-\u0000m\u0000a\u0000c\u0000h\u0000i\u0000n\u0000e\u0000\r\u0000 \u0000",
   "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
-    "razorpay": "^2.9.4",
-    "qrcode": "^1.5.3",
-    "body-parser": "^1.20.2"
-  }
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "qrcode": "^1.5.4",
+    "razorpay": "^2.9.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KUSUMANJALI2027/smart-vending-machine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KUSUMANJALI2027/smart-vending-machine/issues"
+  },
+  "homepage": "https://github.com/KUSUMANJALI2027/smart-vending-machine#readme"
 }
