@@ -5,17 +5,17 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000; // Use Vercel's PORT env var
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Initialize Razorpay with your keys
+// Initialize Razorpay with environment variables
 const razorpay = new Razorpay({
-  key_id: 'rzp_test_RIbMaNxFGal2Ba', // Your Test Key ID
-  key_secret: 'Z9uqppanSlGCdtLsiv6cOxmN', // Your Test Key Secret
+  key_id: process.env.RAZORPAY_KEY_ID, // Set in Vercel dashboard
+  key_secret: process.env.RAZORPAY_KEY_SECRET, // Set in Vercel dashboard
 });
 
 // Endpoint to create dynamic QR
