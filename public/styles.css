@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; text-align: center; margin: 20px; background-color: #f4f4f4; }
+.container { max-width: 800px; margin: auto; }
+.product { display: inline-block; margin: 10px; border: 1px solid #ccc; padding: 10px; background: #fff; border-radius: 5px; }
+.product img { width: 80px; height: 80px; }
+#payment, #adminPanel { margin-top: 20px; }
+#inventory, #products { margin: 10px 0; }
+input, button { padding: 10px; margin: 5px; font-size: 16px; }
+button { background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+button:hover { background-color: #45a049; }
